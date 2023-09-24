@@ -1,4 +1,148 @@
 header {
+  width: 100%;
+  height: auto;
+
+  .headerNav {
     width: 100%;
-    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 29px;
+
+    select {
+      border: none;
+      color: #262626;
+      outline: none;
+    }
+
+    .user_profile {
+      max-width: 330px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+
+      .burger {
+        display: none;
+      }
+
+      .profile {
+        display: flex;
+        align-items: center;
+      }
+
+      .money {
+        p {
+          color: grey;
+        }
+      }
+
+      .bascet {
+        cursor: pointer;
+        position: relative;
+
+        i {
+          font-size: 24px;
+        }
+
+        #badge {
+          position: absolute;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 20px;
+          height: 20px;
+          color: white;
+          background-color: #fb7181;
+          border-radius: 50%;
+          right: -8px;
+          top: -5px;
+          font-weight: 500;
+          outline: 3px solid white;
+          padding: 5px;
+          user-select: none;
+        }
+      }
+    }
+  }
+
+  .nav_links {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 42.26px;
+
+    .burger_link {
+        display: none;
+    }
+
+    .logo {
+      span {
+        color: #22262a;
+        font-size: 18px;
+        font-weight: 700;
+      }
+    }
+
+    .nav_links_ul {
+      display: flex;
+      justify-content: space-between;
+      max-width: 600px;
+      width: 100%;
+
+      .nav_links_link {
+        color: #262626;
+        font-size: 22px;
+        font-weight: 500;
+      }
+
+      .nav_links_link_active {
+        color: #40bfff;
+      }
+    }
+  }
+
+  .hero {
+    margin-top: 26.26px;
+    max-width: 100%;
+    width: 100%;
+    height: 653.734px;
+    background-image: url("https://galleriya.netlify.app/image/month5/Promotion%20Image%20(1).png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .hero_title {
+      padding-top: 258.73px;
+      color: #fff;
+      font-size: 64px;
+      font-weight: 700;
+      line-height: 150%;
+      letter-spacing: 0.5px;
+    }
+  }
+
+  .swiper {
+    position: absolute;
+    bottom: -210px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .headerNav {
+    .user_profile {
+      max-width: 100px !important;
+
+      .db_none {
+        display: none !important;
+      }
+    }
+  }
+
+  .nav_links {
+    .nav_links_ul {
+      display: none !important;
+    }
+  }
 }

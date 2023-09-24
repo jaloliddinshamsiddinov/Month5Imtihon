@@ -8,28 +8,158 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
-    <title>...</title>
+    <title>Commers</title>
 </head>
 
 <body>
     <div class="wrapper">
 
         <header>
-            <div class="container"></div>
+            <div class="container">
+                <nav class="headerNav">
+
+                    <div class="select">
+                        <select>
+                            <option value="">EN</option>
+                            <option value="">US</option>
+                        </select>
+                        <select>
+                            <option value="">USD</option>
+                            <option value="">UZS</option>
+                        </select>
+                    </div>
+
+                    <div class="user_profile">
+                        <div class="profile db_none">
+                            <i class="fa-regular fa-user"></i>
+                            <p class="ms-1">My profile</p>
+                        </div>
+                        <a class="bascet_link  text-dark" href="html/karzinka.html">
+                            <div class="bascet">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                                <span id="badge">5</span>
+                            </div>
+                        </a>
+                        <p class="db_none">items</p>
+                        <div class="money db_none d-flex align-items-center">
+                            <p>$0.00</p>
+                            <i class=" ms-2 fa-solid fa-magnifying-glass" style="color: #000000;"></i>
+                        </div>
+
+
+                        <div class="burger">
+                            <i class="fa-solid fa-bars-staggered"></i>
+                        </div>
+                    </div>
+                </nav>
+
+                <hr>
+
+                <nav class="nav_links">
+                    <div class="logo">
+                        <a href=""><img src="./media/img/header/logo.svg" alt="">
+                            <span>E-Comm</span>
+                        </a>
+
+                    </div>
+                    <ul class="nav_links_ul">
+                        <li class="nav_links_item"><a class="nav_links_link nav_links_link_active" href="#">HOME</a>
+                        </li>
+                        <li class="nav_links_item"><a class="nav_links_link" href="#">BAGS</a></li>
+                        <li class="nav_links_item"><a class="nav_links_link" href="#">SNEAKERS</a></li>
+                        <li class="nav_links_item"><a class="nav_links_link" href="#">BELT</a></li>
+                        <li class="nav_links_item"><a class="nav_links_link" href="#">CONTACT</a></li>
+                    </ul>
+
+                    <div class="burger_link">
+                        <i class="fa-solid fa-bars-staggered"></i>
+                    </div>
+                </nav>
+            </div>
+            <div class="hero">
+                <div class="container">
+                    <h1 class="hero_title">Super Flash Sale <br> 50% Off</h1>
+                </div>
+            </div>
         </header>
 
         <main>
-            <div class="container"></div>
+            <div class="container sale_cardAll d-flex">
+
+                <div class="sale_card">
+                    <div class="sale__card-title">
+                        <h3>FS - QUILTED MAXI CROSS BAG</h3>
+                        <h2 class="sale__card-price">$299,43</h2>
+                    </div>
+                    <div class="bottom_proce">
+                        <h3 class="realy_pice text-decoration-line-through">$534,33</h4>
+                            <h3 class="sale_pice">24% Off</h3>
+                    </div>
+                </div>
+
+                <div class="sale_card">
+                    <div class="sale__card-title">
+                        <h3>FS - Nike Air Max 270 React...</h3>
+                        <h2 class="sale__card-price">$299,43</h2>
+                    </div>
+                    <div class="bottom_proce">
+                        <h3 class="realy_pice text-decoration-line-through">$534,33</h4>
+                            <h3 class="sale_pice">24% Off</h3>
+                    </div>
+                </div>
+
+                <div class="sale_card">
+                    <div class="sale__card-title">
+                        <h3>FS - Nike Air Max 270 React...</h3>
+                        <h2 class="sale__card-price">$299,43</h2>
+                    </div>
+                    <div class="bottom_proce">
+                        <h3 class="realy_pice text-decoration-line-through">$534,33</h4>
+                            <h3 class="sale_pice">24% Off</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab">
+                <div class="container">
+                    <h3 class="tabTitle text-center mt-4">BEST SELLER</h3>
+                    <ul class="tab-list">
+                        <li class="tab-item">sdf</li>
+                        <li class="tab-item">sdf</li>
+                        <li class="tab-item">sdf</li>
+                        <li class="tab-item">sdf</li>
+                    </ul>
+
+                    <div class="tab_box">
+                        <div class="tab_box-item">
+                            <div class="tab-img">
+                                <img src="https://galleriya.netlify.app/image/month5/image%20Product%20(3).png  "
+                                    alt="img">
+                            </div>
+                            <div class="tab-description">
+                                <h3 class="nikePrise">Nike Air Max 270 React</h3>
+                                <div class="tabStars">
+                                    <i class="fa-solid fa-star" style="color: #e7ff2e;"></i>
+                                    <i class="fa-solid fa-star" style="color: #e7ff2e;"></i>
+                                    <i class="fa-solid fa-star" style="color: #e7ff2e;"></i>
+                                    <i class="fa-solid fa-star" style="color: #e7ff2e;"></i>
+                                    <i class="fa-solid fa-star" style="color: #a8a8a8;"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
 
     </div>
 
     <footer>
-        <div class="container"></div>
+        <div class="container">footer</div>
     </footer>
 
     <script src="./bootstrap/bootstrap.min.js"></script>
-    <script src="./js/app.js"></script>
+    <script type="module" src="./js/app.js"></script>
 </body>
 
 </html>

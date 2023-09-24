@@ -1,4 +1,97 @@
 main {
   width: 100%;
   height: auto;
+
+  .container.sale_cardAll {
+    margin-top: -100px;
+    gap: 25px;
+
+    .sale_card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 417.941px;
+      height: 358.315px;
+      background-image: url(https://galleriya.netlify.app/image/month5/image%20Product.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      padding: 20px;
+      border-radius: 8px;
+      &:nth-child(2) {
+        background-image: url("https://galleriya.netlify.app/image/month5/image%20Product%20(1).png");
+      }
+      &:nth-child(3) {
+        background-image: url("https://galleriya.netlify.app/image/month5/image%20Product%20(2).png");
+      }
+
+      .sale__card-title {
+        display: flex;
+        justify-content: space-between;
+        h3 {
+          width: 202.181px;
+          height: 58.08px;
+          color: #223263;
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 150%;
+          letter-spacing: 0.5px;
+        }
+
+        .sale__card-price {
+          color: #40bfff;
+          font-family: Raleway;
+          font-size: 30px;
+          font-weight: 700;
+          line-height: 180%;
+          letter-spacing: 0.5px;
+        }
+      }
+    }
+    .bottom_proce {
+      display: flex;
+      justify-content: center;
+      .realy_pice {
+        color: var(--neutral-grey, #9098b1);
+        font-family: Poppins;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 27px */
+        letter-spacing: 0.5px;
+        text-decoration-line: strikethrough;
+      }
+
+      .sale_pice {
+        color: var(--primary-red, #fb7181);
+        font-family: Poppins;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%; /* 27px */
+        letter-spacing: 0.5px;
+        margin-left: 8px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  main {
+    .container.sale_cardAll {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    .container.sale_cardAll {
+      flex-wrap: wrap;
+      justify-content: space-around;
+      .sale_card {
+        transform: scale(0.8);
+      }
+    }
+  }
 }

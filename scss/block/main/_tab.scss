@@ -1,0 +1,52 @@
+main {
+  .tab {
+    width: 100%;
+    height: auto;
+    margin-top: 63px;
+
+    h3.tabTitle {
+      color: #22262a;
+      font-family: Poppins;
+      font-size: 35px;
+      font-weight: 600;
+    }
+
+    .tab-list {
+      display: flex;
+      justify-content: space-between;
+      max-width: 627px;
+      width: 100%;
+      margin: 26px auto 0;
+    }
+
+    .tab_box {
+      width: 100%;
+      height: auto;
+      margin-top: 23px;
+
+      .tab_box-item {
+        border: 1px solid rgba(128, 128, 128, 0.151);
+        border-radius: 5px;
+        width: 298px;
+        height: 385px;
+
+        .tab-description {
+          .nikePrise {
+            color: var(--neutral-dark, #223263);
+            font-family: Poppins;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 150%;
+            letter-spacing: 0.5px;
+            text-align: center;
+          }
+
+          .tabStars {
+            margin-top: 6px;    
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
