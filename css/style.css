@@ -694,7 +694,7 @@ main .tab .tab_box {
   margin-top: 23px;
   display: grid;
   grid-template-columns: repeat(3, 298px);
-  gap: 15px 0;
+  gap: 20px 0;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
