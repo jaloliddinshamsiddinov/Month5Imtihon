@@ -692,12 +692,72 @@ main .tab .tab_box {
   width: 100%;
   height: auto;
   margin-top: 23px;
+  display: grid;
+  grid-template-columns: repeat(3, 298px);
+  gap: 15px 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 main .tab .tab_box .tab_box-item {
   border: 1px solid rgba(128, 128, 128, 0.151);
   border-radius: 5px;
   width: 298px;
   height: 385px;
+}
+main .tab .tab_box .tab_box-item .tab-img {
+  position: relative;
+  overflow: hidden;
+}
+main .tab .tab_box .tab_box-item .tab-img .tab-item_hover {
+  position: absolute;
+  inset: 30px 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  -webkit-transform: translateY(120%);
+          transform: translateY(120%);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+main .tab .tab_box .tab_box-item .tab-img .tab-item_hover .icon {
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #33a0ff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+main .tab .tab_box .tab_box-item .tab-img .tab-item_hover .icon i {
+  font-size: 24px;
+}
+main .tab .tab_box .tab_box-item .tab-img:hover .tab-item_hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+main .tab .tab_box .tab_box-item .tab-description {
+  padding: 15px;
 }
 main .tab .tab_box .tab_box-item .tab-description .nikePrise {
   color: var(--neutral-dark, #223263);
@@ -712,7 +772,62 @@ main .tab .tab_box .tab_box-item .tab-description .tabStars {
   margin-top: 6px;
   text-align: center;
 }
+main .tab .tab_box .tab_box-item .tab-description .tab_price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+main .tab .tab_box .tab_box-item .tab-description .tab_price h3 {
+  color: var(--primary-blue, #40bfff);
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 180%; /* 32.4px */
+  letter-spacing: 0.5px;
+}
+main .tab .tab_box .tab_box-item .tab-description .tab_price p {
+  color: var(--neutral-grey, #9098b1);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 21px */
+  letter-spacing: 0.5px;
+  text-decoration-line: strikethrough;
+}
+main .tab .tab_box .tab_box-item .tab-description .tab_price h4 {
+  color: var(--primary-red, #fb7181);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 21px */
+  letter-spacing: 0.5px;
+}
 
+@media screen and (max-width: 950px) {
+  main .tab .tab_box {
+    grid-template-columns: repeat(2, 298px);
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+@media screen and (max-width: 660px) {
+  main .tab .tab_box {
+    grid-template-columns: repeat(1, 298px);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 footer {
   width: 100%;
   height: auto;

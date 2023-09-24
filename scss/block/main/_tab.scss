@@ -23,6 +23,10 @@ main {
       width: 100%;
       height: auto;
       margin-top: 23px;
+      display: grid;
+      grid-template-columns: repeat(3, 298px);
+      gap: 15px 0;
+      justify-content: space-between;
 
       .tab_box-item {
         border: 1px solid rgba(128, 128, 128, 0.151);
@@ -30,7 +34,47 @@ main {
         width: 298px;
         height: 385px;
 
+        .tab-img {
+          position: relative;
+          overflow: hidden;
+
+          .tab-item_hover {
+            position: absolute;
+            inset: 30px 15px;
+            background-color: #fff;
+            border-radius: 8px;
+            transform: translateY(120%);
+            transition: 0.3s ease-in-out;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+
+            .icon {
+              width: 50px;
+              height: 50px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border: 1px solid #33a0ff;
+              border-radius: 50%;
+              cursor: pointer;
+
+              i {
+                font-size: 24px;
+              }
+            }
+          }
+
+          &:hover .tab-item_hover {
+            transform: scale(1);
+            transform: translateZ(0);
+            transition: 0.3s ease-in-out;
+          }
+        }
+
         .tab-description {
+          padding: 15px;
           .nikePrise {
             color: var(--neutral-dark, #223263);
             font-family: Poppins;
@@ -42,11 +86,71 @@ main {
           }
 
           .tabStars {
-            margin-top: 6px;    
+            margin-top: 6px;
             text-align: center;
+          }
+
+          .tab_price {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            h3 {
+              color: var(--primary-blue, #40bfff);
+              font-family: Poppins;
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: 180%; /* 32.4px */
+              letter-spacing: 0.5px;
+            }
+
+            p {
+              color: var(--neutral-grey, #9098b1);
+              font-family: Poppins;
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 150%; /* 21px */
+              letter-spacing: 0.5px;
+              text-decoration-line: strikethrough;
+            }
+
+            h4 {
+              color: var(--primary-red, #fb7181);
+              font-family: Poppins;
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: 150%; /* 21px */
+              letter-spacing: 0.5px;
+            }
           }
         }
       }
     }
   }
 }
+
+@media screen and (max-width: 950px) {
+  main {
+    .tab {
+      .tab_box {
+        grid-template-columns: repeat(2, 298px);
+        justify-content: space-evenly;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 660px) {
+    main {
+      .tab {
+        .tab_box {
+          grid-template-columns: repeat(1, 298px);
+          justify-content: center;
+        }
+      }
+    }
+  }
+  
