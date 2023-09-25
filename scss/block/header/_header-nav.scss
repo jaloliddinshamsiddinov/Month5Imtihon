@@ -137,6 +137,10 @@ header {
       .db_none {
         display: none !important;
       }
+
+      .burger {
+        display: block !important;
+      }
     }
   }
 
@@ -144,5 +148,9 @@ header {
     .nav_links_ul {
       display: none !important;
     }
+
+    .burger_link {
+      display: block !important;
+  }
   }
 }

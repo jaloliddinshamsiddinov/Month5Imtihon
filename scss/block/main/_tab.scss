@@ -1,8 +1,48 @@
 main {
+  .serch {
+    max-width: 633px;
+    height: 62px;
+    display: flex;
+    margin-top: 60px;
+    border: 1px solid #40bfff;
+    margin: 60px auto 0;
+
+    input {
+      width: 100%;
+      height: 100%;
+      padding-left: 10px;
+      border: none;
+      outline: none;
+      color: #262626;
+      color: red;
+      font-family: Proxima Nova;
+      font-size: 18px;
+      font-weight: 400;
+    }
+
+    button {
+      width: 127px;
+      height: 100%;
+      background-color: #40bfff;
+      border: none;
+      color: #fff;
+      font-family: Poppins;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+  }
+
   .tab {
     width: 100%;
     height: auto;
     margin-top: 63px;
+
+  
+    .tab-item {
+      cursor: pointer;
+    }
 
     h3.tabTitle {
       color: #22262a;
@@ -17,6 +57,15 @@ main {
       max-width: 627px;
       width: 100%;
       margin: 26px auto 0;
+
+      // .tab-item {
+      //   background-color: blue !important;
+      // }
+
+      .active {
+        color: #33a0ff;
+        border-bottom: 2px solid;
+      }
     }
 
     .tab_box {
@@ -37,6 +86,7 @@ main {
         .tab-img {
           position: relative;
           overflow: hidden;
+          height: 250px;
 
           .tab-item_hover {
             position: absolute;
@@ -129,6 +179,21 @@ main {
         }
       }
     }
+    .tab_loadMore {
+      cursor: pointer;
+    }
+
+    .main__about {
+      .main__about-item {
+        padding: 15px;
+        .main__about-item__img {
+          font-size: 101px;
+        }
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+    }
   }
 }
 
@@ -149,6 +214,16 @@ main {
       .tab_box {
         grid-template-columns: repeat(1, 298px);
         justify-content: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  main {
+    .tab {
+      .main__about {
+        flex-wrap: wrap;
       }
     }
   }
